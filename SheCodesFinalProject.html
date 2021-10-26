@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiba dog 🐶</title>
+    <style>
+      .container{
+         background-image: url("https://www.priga.jp/imgdl/DL00022.jpg");
+         border-radius: 15px;
+      }
+      h1 {
+        text-align: center;
+        font-family: 'Sacramento', cursive;
+        color: #290001;
+        margin: 21px 0px 0px 0px;
+      }
+
+      h2 {
+        text-align: center;
+        padding: 5px 10px;
+        font-size: 20px;
+        margin: 0px 0px 16px 0px;
+        font-family: 'Sacramento', cursive;
+
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 1px;
+        font-family: 'Sacramento', cursive;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #FFC93C;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        font-family: 'Sacramento', cursive;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background: white;
+        color: #FFC93C;
+        border: 1px solid #FFC93C;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .learn-more {
+        color: #290001;
+        text-decoration: none;
+        font-size: 12px;
+        margin: 0px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .photo {
+        text-align: center;
+      }
+      
+      h3{
+        font-size: 30px;
+        text-align: center;
+        color: #290001;
+        font-family: 'Sacramento', cursive;
+        margin: 30px 0px 0px 0px;
+      }
+
+      .photo-contest {
+          font-size: 20px;
+          text-align: center;
+          padding: 15px;
+          margin: 0px;
+          font-family: 'Sacramento', cursive;
+      }
+         .under {
+             background: linear-gradient(transparent 70%, #ff99ab 70%);
+          }
+
+      .illustration {
+          max-width: 600px;
+          width: 150px;
+          margin: 0 auto;
+      }
+
+      .best-photo {
+          font-size: 25px;
+          margin: 30px 0px 0px 0px;
+          text-align:center;
+      }
+
+      .footer {
+        text-align: center;
+        font-family: 'Sacramento', cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        🐕 SHIBA Dog Lovers 🐕
+      </h1>
+      <h2>
+        ～Let's convey the charm of Shiba dog 💕～
+      </h2>
+      <hr>
+      <img
+        src="https://d1f5hsy4d47upe.cloudfront.net/84/843c4ade9d92abfe3ccfec3b52c03a82_t.jpeg"
+        alt="Shiba dog"
+      />
+      <p>
+        <strong>The Shiba dog </strong>(柴犬, Japanese: [ɕiba inɯ]) is a Japanese breed of hunting dog.
+        A small-to-medium breed, it is the smallest of the six original and distinct spitz breeds of dog native to Japan.
+        A small, alert and agile dog that copes very well with mountainous terrain and hiking trails, 
+        the Shiba dog was originally bred for hunting.
+        It looks similar to and is often mistaken for other Japanese dog breeds like the Akita Inu or Hokkaido, 
+        but the Shiba dog is a different breed with a distinct blood line, temperament, 
+        and smaller size than other Japanese dog breeds.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Shiba_Inu"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <hr>
+     <h3>
+         SHIBA DOG PHOTO CONTEST 2021
+     </h3>
+      <p class="photo-contest"
+      >
+      <span class="under"><strong>👇Waiting for your cute Shiba dog photos! 📸👇</strong></span>
+      </p>
+      <img class="illustration"
+      src="https://mumecafecom.files.wordpress.com/2020/11/12-2.png" 
+      alt="柴イラスト">
+
+      <button class="participate-button">
+        👉 participate in contest
+      </button>
+      
+      <p class="best-photo">
+        ✨🏆The best photo of the last year🏆✨
+      </p>
+
+      <img 
+       src="https://www.axa-direct.co.jp/pet/pet-ms/img/media/2017/10/img_shiba_kind-dog_003.jpg"
+       alt="The best of the last year photo"
+       />
+
+      <p class="footer">
+        This page was built by
+        <a href="https://mumecafe.com/" target="_blank">
+          Misa
+        </a>
+      </p>
+    </div>
+    <script>
+      function participate() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let dogName = prompt("What is your Shiba dog's name?");
+
+        alert(
+          "Thank you, " +
+            name + " & " + dogName + 
+            "! We'll be in touch by email. " +
+            "Get ready for a nice " + dogName +"'s picture, " + name + "!"
+        );
+      }
+
+      let participatebutton = document.querySelector(".participate-button");
+      participatebutton.addEventListener("click", participate);
+    </script>
+  </body>
+</html>
